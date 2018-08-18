@@ -50,9 +50,9 @@ labels:存放YOLO训练测试所需的每张图片的检测信息，为xml转换
 
 def convert_annotation(image_id):
     '''
-    PRCV给出的xml文件标签较为“奇特”
-    convert_annatation()将PRCV的xml直接输出为YOLO用到的含有图片检测信息的txt
-    而不是将PRCV的xml修改为VOC的xml（好啰嗦）
+    ****给出的xml文件标签较为“奇特”
+    convert_annatation()将****的xml直接输出为YOLO用到的含有图片检测信息的txt
+    而不是将****的xml修改为VOC的xml（好啰嗦）
     '''
     in_file = open('./Annotations/%s.xml'%(image_id))
     out_file = open('./labels/%s.txt'%(image_id), 'w')
